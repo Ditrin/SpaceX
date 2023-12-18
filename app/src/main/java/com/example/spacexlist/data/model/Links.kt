@@ -5,7 +5,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class Links(
     val article: String,
-    val reddit: Any,
-    val wikipedia: String
+    val reddit: Any?,
+    val wikipedia: String?
 )
 
