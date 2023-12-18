@@ -22,5 +22,4 @@ object Networking {
 
     val spaceXDataAPI: SpaceXDataAPI
         get() = retrofit.create(SpaceXDataAPI::class.java)
-
 }

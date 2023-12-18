@@ -12,14 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:padding="2dp">
+        android:padding="6dp">
 
         <TextView
             android:id="@+id/details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:ellipsize="end"
             android:maxLines="3"
+            android:singleLine="false"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/title"
@@ -30,8 +31,8 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="4dp"
+            android:maxLength="40"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="10dp"
+            android:maxLength="5"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"
