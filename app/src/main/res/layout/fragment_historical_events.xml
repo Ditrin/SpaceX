@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@color/tor"
     android:id="@+id/fragment_history"
     >
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/appBarInfo"
         android:layout_width="match_parent"
-        android:background="@color/grey"
+        android:background="@color/tor"
         app:title="SpaceX Historical Events"
         android:layout_height="40dp"
         android:textStyle="bold"
@@ -22,13 +22,12 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:listitem="@layout/item_historical_event"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarInfo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_historical_event" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

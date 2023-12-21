@@ -6,7 +6,8 @@ class Interactor constructor(
     private val eventMapper: EventMapper,
     private val repository: SpaceXDataRepository
 ) {
-    suspend fun getEventItemList() : List<EventItem>{
-        return repository.getAllHistoricalEvents().map {eventMapper.map(it)}
+
+    suspend fun getEventItemList(): List<EventItem> {
+        return repository.getAllHistoricalEvents().map { eventMapper.map(it) }
     }
 }

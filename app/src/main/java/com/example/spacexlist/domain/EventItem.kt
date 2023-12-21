@@ -1,9 +1,14 @@
 package com.example.spacexlist.domain
+
+import com.squareup.moshi.Json
+
 data class EventItem(
     val title: String?,
-    val event_date_utc: String,
-    val flight_number: Int,
-    val details: String,
+    @Json(name="event_date_utc")
+    val eventDateUtc: String?,
+    @Json(name="flight_number")
+    val flightNumber: Int?,
+    val details: String?,
 )
 
 
