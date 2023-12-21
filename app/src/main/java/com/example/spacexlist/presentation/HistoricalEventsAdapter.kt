@@ -43,4 +43,5 @@ class HistoricalEventsAdapter : RecyclerView.Adapter<HistoricalEventsAdapter.Vie
         events = eventList.toMutableList()
         notifyDataSetChanged()
     }
+
 }
